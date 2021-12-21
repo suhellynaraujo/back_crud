@@ -1,0 +1,277 @@
+﻿@model back_crud.Models.Pesquisar
+@{
+    ViewData["Title"] = "Destino | Agência de viagem Súh FullStack";
+}
+<head>
+    <link rel="stylesheet" href="~/css/destino.css">
+</head>
+
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="titulo">
+    <h2>Destinos Nacionais e Internacionais</h2>
+</section>
+
+<section>
+    <div class="pesquisa" >
+        <div class="pesq" asp-action="Create" asp-controller="Pesquisar">
+            <span>
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-search"
+                     viewBox="0 0 16 16">
+                    <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z" />
+                </svg>
+            </span>
+            <input asp-for=Nome_Destino type="text" placeholder="Insira o nome do Destino" class="pesq"> <button class="pesq">
+                <span>
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x"
+                         viewBox="0 0 16 16">
+                        <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z" />
+                    </svg>
+                </span>
+                <button class="pesq"asp-action="Create" asp-controller="Pesquisar">
+                    <span>Ida</span>
+                    <input asp-for=Ida type="date" class="pesq">
+                </button>
+                <button class="pesq"asp-action="Create" asp-controller="Pesquisar">
+                    <span>Volta</span>
+                    <input asp-for=Volta type="date" class="pesq">
+                </button>
+                <button class="btnpes" asp-controller="Pesquisar" asp-action="Create" type="submit">Pesquisar</button>
+        </div>
+    </div>
+</section>
+
+<section>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+     </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+   <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+   <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+</section>
+
+<hr>
+
+<section class="titulo">
+    <h2>Formas de pagamento</h2>
+</section>
+
+<section class="pag">
+    <img src="/img/Payment Information-bro.png">
+    <img src="/img/payment-mobile.png" alt="">
+</section>
+
+<footer>
+    Agencia de Viagens Súh FullStack |
+    © 2021 - Todos os direitos reservados.
+    <div class="midias">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+    </div>
+</footer>
+
+
+
+
+

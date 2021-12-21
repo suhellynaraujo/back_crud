@@ -1,0 +1,68 @@
+﻿@model back_crud.Models.Entrar
+
+@{
+    ViewData["Title"] = "Entrar | Agência de viagem Súh FullStack";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/entrar.css">
+</head>
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="divLogin">
+        <div class="entrar">
+            <h3>Bem Vindo de Volta!</h3>
+            <form asp-action="Entrar" method="post">
+                <input asp-for="Email" type="email" placeholder="Email">
+                <input asp-for="Senha" type="senha" placeholder="Senha">
+                <a class="senha" asp-action="Edit" asp-controller="Cadastro">Esqueceu sua Senha?</a>
+                <button class="btn" type="submit"> Entrar </button>
+            </form>
+            <p>Ou use uma das contas para entrar</p>
+            <div>
+                <ul>
+                    <li><a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facaebook" width="20px"></a></li>
+                    <li><a href="https://www.google.com.br/"><img src="/img/google.png" alt="Google" width="20px"></a></li>
+                    <li><a href="https://br.linkedin.com/"><img src="/img/linkedin.png" alt="LinkedIn" width="20px"></a></li>
+                </ul>
+            </div>
+            <p>Ainda não tem cadastro? <a asp-action="Cadastro">Clique Aqui</a></p>
+        </div>
+
+    </div>
+</header>
+
+<footer>
+    Agencia de Viagens Súh FullStack |
+    © 2021 - Todos os direitos reservados.
+    <div class="midias">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+    </div>
+</footer>
+
+

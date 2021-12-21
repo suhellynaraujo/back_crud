@@ -1,0 +1,310 @@
+﻿@model back_crud.Models.Pesquisar
+@{
+    ViewData["Title"] = "Agência de viagem Súh FullStack";
+}
+<head>
+    <link rel="stylesheet" href="~/css/index.css">
+</head>
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Destino" asp-action="Create">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Promocoes" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Contato" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-controller="Entrar" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+
+    <div class="texto">
+        <div class="textoH1">
+            <h1>Cadastre-se para disfrutar de ofertas exclusivas!</h1>
+        </div>
+        <div class="textoP">
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Quas eaque minus facilis, magnam quae
+                explicabo ratione, commodi maiores consequuntur iusto molestias qui, voluptate nemo. Ipsa autem
+                suscipit distinctio possimus expedita.
+            </p>
+        </div>
+        <div>
+            <a asp-controller="Cadastro" asp-action="Create" ><button class="btnpes"  type="submit">Cadastre-se</button></a>
+
+        </div>
+    </div>
+</header>
+
+<hr>
+
+<section class="titulo">
+    <h2>Destinos Nacionais</h2>
+</section>
+
+<section>
+    <div class="card">
+        <img src="https://todepassagem.clickbus.com.br/wp-content/uploads/2020/03/Cristo-Redentor-RJ.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagem</span>
+            <h2>a partir de 220$</h2>
+            <p>Rio de Janeiro </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://static.rentcars.com/imagens/modules/localidade/about/89-desktop-location-description.png"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagem</span>
+            <h2>a partir de 220$</h2>
+            <p>São Paulo</p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://www.submarinoviagens.com.br/media/17958672/brasilia-congresso-nacional-504246364.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagem</span>
+            <h2>a partir de 220$</h2>
+            <p>Destrito Federal</p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+
+    <div class="card">
+        <img src="https://www.transportal.com.br/noticias/wp-content/uploads/2018/05/Balne%C3%A1rio-Cambori%C3%BA-Santa-Catarina.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagem</span>
+            <h2>a partir de 220$</h2>
+            <p>Santa Catarina</p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <a href="/html/destino.html" class="btn2">Mais Destinos Nacionais</a>
+</section>
+
+<hr>
+<section class="titulo">
+    <h1>Destinos Internacionais</h1>
+</section>
+
+<section>
+    <div class="card">
+        <img src="https://triplover.com.br/wp-content/uploads/2019/10/W-Maldives.jpg" class="card-img-top">
+        <div class="card-texto">
+            <span class="nome">Passagem</span>
+            <h2>a partir de US$ 1.030</h2>
+            <p>Caribe </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://www.latamairlines.com/content/dam/latamxp/sites/destinos/chile/seo/vuelos-santiago.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome">Passagem</span>
+            <h2>a partir de US$ 2.730</h2>
+            <p>México </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://cdn.getyourguide.com/img/location/5c9f29710b6f9.jpeg/88.jpg" class="card-img-top"
+             alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagem</span>
+            <h2>a partir de US$ 1.400</h2>
+            <p>Chile </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+
+    <div class="card">
+        <img src="https://www.melhoresdestinos.com.br/wp-content/uploads/2019/02/passagens-aereas-paris-capa2019-02.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome">Passagem</span>
+            <h2>a partir de US$ 3.821</h2>
+            <p>Paris </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <a href="/html/destino.html" class="btn2">Mais Destinos Internacionais</a>
+</section>
+
+<hr>
+
+<section class="titulo">
+    <h1>Promoções</h1>
+    <h3>Pacotes exclusivos com ofertas imperdíveis!</h3>
+</section>
+
+<section>
+    <div class="card">
+        <img src="https://todepassagem.clickbus.com.br/wp-content/uploads/2020/03/Cristo-Redentor-RJ.jpg"
+             class="card-img-top">
+        <div class="card-texto">
+            <span class="nome"> Pacote</span>
+            <h2>a partir de 550$</h2>
+            <p>Rio de Janeiro </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://images.musement.com/cover/0069/97/fortaleza-brazil-jpg_header-6896973.jpeg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome">Pacote</span>
+            <h2>a partir de 400$</h2>
+            <p>Fortaleza</p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <div class="card">
+        <img src="https://www.visitbritain.com/sites/default/files/styles/consumer_campaigns_hero_mobile/public/paragraphs_bundles/hero/london.jpg?itok=Fy9nGaJ1"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome">Pacote</span>
+            <h2>a partir de US$ 2.000</h2>
+            <p>Londres </p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+
+    <div class="card">
+        <img src="https://vemvoar.voeazul.com.br/wp-content/uploads/2018/07/foz-do-iguacu_05.jpg"
+             class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome">Pacotes</span>
+            <h2>a partir de US$ 3.500</h2>
+            <p>Foz do Iguaçú</p>
+
+        </div>
+        <a href="#" class="btn">VER MAIS</a>
+    </div>
+    <a href="/html/destino.html" class="btn2">Mais Promoções</a>
+</section>
+
+<hr>
+
+<section class="titulo">
+    <span>Depoimentos</span>
+    <h1>O que nossos usuários dizem!</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet qui error at odio quisquam, alias quidem totam est voluptatibus aliquid porro fugit hic repellat nam modi optio tempora aspernatur officiis.</p>
+</section>
+
+<section class="feedback">
+    <div class="cardfee">
+        <div class="cardfee-imagem1"></div>
+        <div class="cardfee-texto">
+            <h2>Soraia</h2>
+            <span class="nome">Back -End</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, non minus? Iusto est dolorum totam
+                sit,
+            </p>
+        </div>
+
+    </div>
+    <div class="cardfee">
+        <div class="cardfee-imagem2"></div>
+        <div class="cardfee-texto">
+            <h2>Rodolfo</h2>
+            <span class="nome">FullStack</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, non minus? Iusto est dolorum totam
+                sit,
+            </p>
+        </div>
+
+    </div>
+    <div class="cardfee">
+        <div class="cardfee-imagem3"></div>
+        <div class="cardfee-texto">
+            <h2>Beatriz</h2>
+            <span class="nome">Front-End</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, non minus? Iusto est dolorum totam
+                sit,
+            </p>
+        </div>
+    </div>
+    <div class="cardfee">
+        <div class="cardfee-imagem4"></div>
+        <div class="cardfee-texto">
+            <h2>Paulo</h2>
+            <span class="nome">Design</span>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque, non minus? Iusto est dolorum totam
+                sit,
+            </p>
+        </div>
+
+</section>
+
+<section>
+    <a asp-action="Create" asp-controller="Contato" class="btn2">Clique aqui nos de seu Feedback</a>
+</section>
+
+<hr>
+
+<section class="titulo">
+    <h2>Formas de pagamento</h2>
+</section>
+
+<section class="pag">
+    <img src="~/img/Payment Information-bro.png">
+    <img src="~/img/payment-mobile.png" alt="">
+</section>
+
+
+
+<footer>
+    Agencia de Viagens Súh FullStack |
+    © 2021 - Todos os direitos reservados.
+    <div class="midias">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+
+    </div>
+</footer>
+
+
+
+
+
+
+
+
+
+
+

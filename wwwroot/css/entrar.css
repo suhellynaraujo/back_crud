@@ -1,0 +1,144 @@
+
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+
+header{    
+    background: url('../img/Computer.svg') no-repeat ;
+    height: 800px;    
+    background-size: cover;  
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav{   
+    background-color: #e7be34;
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;
+ 
+}
+
+ul{ 
+    list-style: none;
+    padding: 0;    
+}
+
+li{ 
+    padding: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+}
+
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;   
+}
+
+.menu a:hover{
+    color: #ae6c0a;  
+}
+
+.divLogin{
+    background-color: rgba(231, 191, 12, 0.300);
+    box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.400);  
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+    margin-top: 90px;
+    margin-left: 500px;
+    width: 25%;
+    border-radius: 20px;
+}
+
+.entrar form{
+    display: flex;
+    flex-direction: column;  
+}
+.entrar input, button{
+    
+    margin: 5px;
+    border-radius: 15px;
+    padding:10px;
+    border: 1px solid #ea930c;  
+}
+.entrar input:focus, button:focus{
+    box-shadow: 0000;
+    outline:0;
+}
+.entrar h3, p{
+    text-align: center;
+    color: #ea910c;
+}
+.entrar button{
+    font-weight: bold;
+    align-items: center;
+    margin: 5px;
+    margin-left: 30%;
+    width: 100px;  
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    background-color: #e7be34;    
+}
+.entrar button:hover{
+    background-color: #ea910c;
+    color: #fff;
+}
+.senha{
+   text-align: center;
+   text-decoration: none;
+   color: #ea910c;
+   margin: 10px;
+   font-size: 12px;
+}
+.entrar ul{   
+    display: flex;
+   flex-direction: row;
+   justify-content: center;   
+}
+
+.entrar ul li a{    
+   display: flex;   
+   margin-right: 10px;
+   text-align: center;
+}
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;       
+}
+.midias{
+    padding: 10px;
+}
+.midias i{
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}

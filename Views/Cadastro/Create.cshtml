@@ -1,0 +1,86 @@
+﻿@model back_crud.Models.Cadastro
+@{
+    ViewData["Title"] = "Cadastro | Agência de viagem Súh FullStack";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/cadastro.css">
+</head>
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="cadastro">
+    <img src="~/img/Mobile login-cuate.svg" alt="">
+    <div class="cadastrar">
+        <h3>Criar Conta</h3>
+         <div class="row">
+            <div class="col-md-4">
+                <form asp-action="Create" method="post">
+                    <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+                    <div class="form-group">                        
+                        <input asp-for="Nome" class="form-control" placeholder="Nome"/>
+                        <span asp-validation-for="Nome" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">                        
+                        <input asp-for="Email" class="form-control" placeholder="Email"/>
+                        <span asp-validation-for="Email" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">                       
+                        <input asp-for="Senha" class="form-control" placeholder="Senha" />
+                        <span asp-validation-for="Senha" class="text-danger"></span>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" value="Cadastrar" class="btn" />
+                    </div>
+                </form>
+            </div>
+ </div>
+        <p>Ou cadastre-se com</p>
+        <div class="midias">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facaebook" width="20px"></a></li>
+                <li><a href="https://www.google.com.br/"><img src="/img/google.png" alt="Google" width="20px"></a></li>
+                <li><a href="https://br.linkedin.com/"><img src="/img/linkedin.png" alt="LinkedIn" width="20px"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<div>
+        <a asp-action="Index">Back to List</a>
+ </div>
+
+
+     
+
+
+
+
+@section Scripts {
+    @{
+    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+}
+}

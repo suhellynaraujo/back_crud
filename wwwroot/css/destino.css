@@ -1,0 +1,226 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+header{
+    height: 30px;  
+    background-position: center;
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+nav{   
+    background-color: #e7be34;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.400);  
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;
+   
+  
+}
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;   
+}
+
+.menu a:hover{
+    color: #ae6c0a;  
+}
+
+.pesquisa{
+    background-color:#e7be34;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; 
+    height: 130px;
+    margin-top: 20px;
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.btnpes{
+   color: #ea930c;
+   margin-top: 30px;
+   padding: 12px;
+   border: 0;
+   border-radius: 10px;
+   font-weight: bold;    
+}
+
+.btnpes:hover{
+   transition: 0.3s;
+   background-color: #ea930c;
+   color: #fff;
+}
+
+.pesq{
+   border: 0;
+   border-radius: 15px;
+   height: 40px;
+   color: #ea930c;
+   font-weight: bold;  
+}
+
+.pesq input:focus, button:focus{
+   box-shadow: 0000;
+   outline:0;
+}
+
+section{
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   margin-top: 50px;
+   align-items: center;
+   justify-content: center;
+}
+
+.card{   
+    display: grid;
+    grid-template-columns: 250px;
+    grid-template-rows: 200px 100px 50px;     
+    grid-template-areas: "imagem" "texto" "status";
+    font-family: roboto;
+    background:  white; 
+    border-radius: 15px;     
+    text-align: center;  
+    transition: 0.3s ease;
+    cursor: pointer;
+    margin: 40px;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494);  
+
+}
+
+.card:hover{
+    transform: scale(1.1);
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.494); 
+   
+}
+
+
+.card img{
+    border-top-left-radius: 15PX;
+    border-top-right-radius: 15PX;
+    background-size: cover; 
+    height: 100%;
+}
+.card-texto{
+    grid-area: texto;
+    margin: 10px;
+    
+ 
+}
+
+.card-texto .nome{
+    color: #ea930c;
+    font-size: 15px;
+}
+
+.card-texto p{
+    color: #ea930c;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.card h2{
+    margin-top: 0px;
+    font-size: 25px;
+}
+.card a{
+    padding: 10px;
+    background-color:#e7be34 ;
+    color: #000;
+    border: 0;
+    border-radius: 15px;
+    font-weight: bolder;
+}
+
+.card a:hover{
+    background-color: #ea930c;
+    color: #fff;
+}
+
+.card-img{
+    border-radius: 1000px;
+    background-size: cover;
+}
+.btn-2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+}
+
+.btn2{
+    text-decoration: none;
+    background-color:#e7be34;
+    color: #000 ;
+    margin-top: 30px;
+    padding: 12px;
+    border: 0;
+    border-radius: 10px;
+    font-weight: bold;    
+}
+.btn2:hover{
+    transition: 0.3s;
+    background-color: #ea930c;
+    color: #fff;
+
+}
+.titulo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+
+}
+.pag{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;    
+}
+.pag img{
+    width: 250px;
+}
+
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;    
+}
+.midias{
+    padding: 10px;
+}
+.midias i{
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}
+.row {
+    margin: 10%;
+    align-items: center;
+    justify-content: center;
+    background-color: #e7be34;
+    border-radius: 20px;
+}

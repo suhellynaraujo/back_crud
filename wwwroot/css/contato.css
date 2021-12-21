@@ -1,0 +1,154 @@
+body{
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;    
+}
+
+.logo{    
+    height:30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;  
+}
+
+.logo:hover{
+    transform: scale(1.1);
+    color: #000;
+}
+
+nav{   
+    background-color: #e7be34;
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.400);  
+    height: 60px;
+    display: flex; 
+    justify-content: space-between; 
+    align-items: center;
+    padding: 0%;
+    margin:0%;  
+}
+
+.menu a{
+    color: rgb(255, 255, 255);   
+    text-decoration: none;
+    font-weight: bold;  
+    transition: 0.3s ease;   
+}
+
+.menu a:hover{
+    color: #ae6c0a;  
+}
+
+section{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-top: 50px;
+}
+.titulo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+} 
+
+.divContato{
+    margin-top: 50px; 
+    margin-bottom: 100px;       
+    display: flex;
+    flex-direction: space-between;
+    align-items: center;
+    justify-content: center;  
+    box-shadow: 0px 0px 10px 4px rgba(0, 0, 0, 0.200); 
+    margin-left: 50px;
+    margin-right: 50px;
+    border-radius: 10px;
+    height: 70%;
+    overflow: hidden;
+}
+.sobreAgencia {
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 10px;
+    float: left;
+}
+
+    .sobreAgencia p {
+        max-width: 500px;
+    }
+
+.divContatos {
+    margin-right: 10%;
+}
+
+
+.divContatos ul{
+    display: flex;
+    flex-direction: column;
+   justify-content: center;
+   padding: 10px;
+   
+}
+.divContatos ul li{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;    
+    
+   
+}
+ .divMensagem {
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     text-align: center;  
+     width: 100%;
+     margin: 50px;
+ }
+
+.divMensagem  button, textarea{
+    margin: 5px;
+    border-radius: 15px;
+    padding:10px;
+    border: 1px solid #00000070;   
+}
+
+.divMensagem  button:focus, textarea:focus {
+   box-shadow:0000;
+   outline: 0;
+}
+
+.divMensagem button{
+    margin: 5px;
+    margin-left: 30%;
+    width: 100px;  
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    font-weight: bold;
+    background-color: #e7be34;
+   
+}
+.divMensagem button:hover{
+    background-color: #ea910c;
+    color: #fff;
+}
+
+
+footer{
+    background-color:#e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 50px;    
+}
+.midias{
+    padding: 10px;
+}
+.midias i{
+    font-size: 20px; 
+    margin-left: 10px;
+    margin-right: 10px;
+    color: #fff;
+}

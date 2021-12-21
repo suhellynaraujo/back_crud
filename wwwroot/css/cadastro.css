@@ -1,0 +1,126 @@
+body {
+    height: 100vh;
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial;
+}
+
+.logo {
+    height: 30px;
+    width: 70%;
+    margin-right: 30px;
+    margin-left: 80px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+    .logo:hover {
+        transform: scale(1.1);
+        color: #000;
+    }
+
+nav {
+    background-color: #e7be34;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0%;
+    margin: 0%;
+}
+
+
+
+    nav ul {
+        display: flex;
+        flex-direction: row;
+    }
+
+.menu a {
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s ease;
+}
+
+    .menu a:hover {
+        color: #ae6c0a;
+    }
+
+
+
+.cadastro {
+    display: flex;
+    justify-content: space-around;
+    text-align: center;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    margin-left: 300px;
+    width: 40%;
+    border-radius: 20px;
+}
+
+.cadastrar form {
+    display: flex;
+    flex-direction: column;
+}
+
+.cadastrar input, button {
+    width: 300px;
+    margin: 5px;
+    border-radius: 15px;
+    padding: 10px;
+    border: 1px solid #ea930c;
+}
+
+    .cadastrar input:focus, button:focus {
+        box-shadow: 0000;
+        outline: 0;
+    }
+
+.cadastrar h3, p {
+    text-align: center;
+    color: #ea910c;
+}
+
+.cadastrar button {
+    font-weight: bold;
+    margin: 5px;
+    border-radius: 15px;
+    border: 0;
+    padding: 5px;
+    background-color: #e7be34;
+    width: 100px;
+    margin-left: 35%;
+    margin-top: 20px;
+}
+
+    .cadastrar button:hover {
+        background-color: #ea910c;
+        color: #fff;
+    }
+
+.cadastrar li, a {
+    text-decoration: none;
+    list-style: none;
+}
+
+
+ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+a {
+    display: flex;
+    margin-right: 30px;
+}
+
+footer {
+    background-color: #e7be34;
+    color: #fff;
+    text-align: center;
+    padding: 5px;
+}

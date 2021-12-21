@@ -1,0 +1,302 @@
+﻿@model back_crud.Models.Destino
+
+@{
+    ViewData["Title"] = "Destino | Agência de viagem Súh FullStack";
+}
+<head>
+    <link rel="stylesheet" href="~/css/destino.css">
+</head>
+
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index" asp-controller="Home">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino" asp-controller="Home">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes" asp-controller="Home">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato"asp-controller="Home">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar" asp-controller="Home">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+
+</header>
+
+<section class="titulo">
+    <h2>Destinos Nacionais e Internacionais</h2>
+</section>
+
+<section class="titulo">
+    <h2>Reserve Agora!</h2>
+</section>
+
+ <div class="row teste2">
+    <div class="col-md-4">
+        <form asp-action="Create" method="post">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            <div class="form-group">
+                <label asp-for="Nome" class="control-label"></label>
+                <input asp-for="Nome" class="form-control" />
+                <span asp-validation-for="Nome" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Cidade" class="control-label"></label>
+                <input asp-for="Cidade" class="form-control" />
+                <span asp-validation-for="Cidade" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Estado" class="control-label"></label>
+                <input asp-for="Estado" class="form-control" />
+                <span asp-validation-for="Estado" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Pais" class="control-label"></label>
+                <input asp-for="Pais" class="form-control" />
+                <span asp-validation-for="Pais" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="Descricao" class="control-label"></label>
+                <input asp-for="Descricao" class="form-control" />
+                <span asp-validation-for="Descricao" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Criar" class="btn" asp-action="Index" asp-controller="Destino" />
+            </div>
+        </form>
+    </div>
+</div>
+
+                
+
+<section>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+     </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+   <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+   <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+    <div class="card">
+        <img src="/img/beautiful-tropical-beach-sea.jpg" class="card-img-top" alt="...">
+        <div class="card-texto">
+            <span class="nome"> Passagens</span>
+            <h2>a partir de 00$</h2>
+            <p>Lorem ipsum, dolor sit</p>
+        </div>
+        <a href="#" class="btn">RESERVAR</a>
+    </div>
+</section>
+
+<hr>
+
+
+<section class="titulo">
+    <h2>Formas de pagamento</h2>
+</section>
+
+<section class="pag">
+    <img src="/img/Payment Information-bro.png">
+    <img src="/img/payment-mobile.png" alt="">
+</section>
+
+<footer>
+    Agencia de Viagens Súh FullStack |
+    © 2021 - Todos os direitos reservados.
+    <div class="midias">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+    </div>
+</footer>
+<div>
+    <a asp-action="Index">Back to List</a>
+</div>
+
+
+
+
+
+
+
+
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

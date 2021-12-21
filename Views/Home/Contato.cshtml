@@ -1,0 +1,90 @@
+﻿@model back_crud.Models.Contato
+@{
+    ViewData["Title"] = "Contato | Agência de viagem Súh FullStack";
+}
+
+<head>
+
+    <link rel="stylesheet" href="~/css/contato.css">
+</head>
+
+
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+
+<section class="titulo">
+    <h5>Mantenha o contato conosco!</h5>
+</section>
+
+<section class="container">
+    <div class=" divContato">
+        <div class="sobreAgencia">
+            <h5 class="titulo">Contate Nossa Agência</h5>
+            <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Earum reiciendis officiis a eos? Nihil et,
+                sapiente necessitatibus sit vel, doloribus amet accusamus quae nulla voluptate beatae porro natus,
+                quibusdam esse.
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus, aut. Molestias, aperiam
+                eveniet.
+            </p>
+
+        </div>
+
+        <div class="divContatos">
+            <img src="/img/Texting-cuate.svg" alt="">
+        </div>
+
+        <div class="divMensagem">
+            <h5 class="titulo">Envie-nos sua mensagem</h5>
+            <form asp-action="Contato" method="post">
+                <div class="mb-2 ">
+                    <input asp-for="Nome" type="Nome" class="form-control" placeholder="Nome">
+                </div>
+                <div class="mb-2">
+                    <input asp-for="Email" type="Email" class="form-control" id="exampleFormControlInput1" placeholder="nome@examplo.com">
+                </div>
+                <div class="mb-2">
+                    <textarea asp-for="Mensagem" class="form-control" id="exampleFormControlTextarea1" placeholder="Seu texto aqui!"></textarea>
+                </div>
+                <button class="btn" type="submit">Enviar</button>
+            </form>
+        </div>
+    </div>
+</section>
+
+
+
+
+<footer>
+    Agencia de Viagens Súh FullStack |
+    © 2021 - Todos os direitos reservados.
+    <div class="midias">
+        <a href="https://pt-br.facebook.com/"><i class="bi bi-facebook"></i> </a>
+        <a href="https://www.instagram.com/"><i class="bi bi-instagram"></i></a>
+        <a href="https://twitter.com/"><i class="bi bi-twitter"></i></a>
+        <a href="https://br.linkedin.com/"><i class="bi bi-linkedin"></i></a>
+    </div>
+</footer>

@@ -1,0 +1,57 @@
+﻿@model back_crud.Models.Cadastro
+@{
+    ViewData["Title"] = "Cadastro | Agência de viagem Súh FullStack";
+}
+
+<head>
+    <link rel="stylesheet" href="~/css/cadastro.css">
+</head>
+
+<header>
+    <nav class="menu">
+        <div>
+            <a asp-action="Index"><img src="~/img/Logo.png" alt="" class="logo"></a>
+        </div>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Index">Início</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Destino">Destino</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Promocoes">Promoções</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Contato">Contato</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" asp-action="Entrar">Entrar</a>
+            </li>
+        </ul>
+    </nav>
+</header>
+<div class="cadastro">
+    <img src="~/img/Mobile login-cuate.svg" alt="">
+    <div class="cadastrar">
+        <h3>Criar Conta</h3>
+        <form asp-action="Cadastro" method="post">
+            <input asp-for="Nome" type="Nome" placeholder="Nome">
+            <input asp-for="Email" type="Email" placeholder="Email">
+            <input asp-for="Senha" type="Senha" placeholder="Senha">
+            <button class="btn" type="submit" > Cadastrar </button>
+        </form>
+        <p>Ou cadastre-se com</p>
+        <div class="midias">
+            <ul>
+                <li><a href="https://www.facebook.com/"><img src="/img/facebook.png" alt="Facaebook" width="20px"></a></li>
+                <li><a href="https://www.google.com.br/"><img src="/img/google.png" alt="Google" width="20px"></a></li>
+                <li><a href="https://br.linkedin.com/"><img src="/img/linkedin.png" alt="LinkedIn" width="20px"></a></li>
+            </ul>
+        </div>
+    </div>
+
+</div>
+
+<footer>
+</footer>
